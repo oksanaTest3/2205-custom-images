@@ -1,6 +1,6 @@
 vm:
   use:
-    name:
+    name: test
 
 script:
   - echo "Checking if custom file exists"
