@@ -1,6 +1,5 @@
 vm:
-  use:
-    name: cust-image4
+  use: cust-image4
   size: x-large
 
 script:
