@@ -1,12 +1,13 @@
-# os: linux
-# language: generic
-# dist: focal
-
-vm:
-  create:
-    name: cust-image
-
-script:
-  - sudo mkdir /my-custom-dir
-  - echo "Test custom image!" | sudo tee /my-custom-dir/my_custom_file.txt
-  - sudo cat /my-custom-dir/my_custom_file.txt
+jobs:
+  include:
+    - stage: "Create custom image"
+      os: linux
+      dist: focal
+      vm:
+        create:
+          name: cust-image
+      script:
+        - echo "Creating custom file"
+        - sudo mkdir /my-custom-dir
+        - echo "Test custom image new-custom-image!" | sudo tee /my-custom-dir/test_file.txt
+        - sudo cat /my-custom-dir/test_file.txt
