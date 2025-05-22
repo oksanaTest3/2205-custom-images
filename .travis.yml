@@ -1,6 +1,6 @@
 vm:
   use: cust-image4
-  size: x-large
+  size:
 
 script:
   - echo "Checking if custom file exists"
