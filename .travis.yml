@@ -1,6 +1,6 @@
 jobs:
   include:
-    - stage: "Create custom image"
+    - stage: "Create custom image1"
       os: linux
       language: generic
       dist: focal
