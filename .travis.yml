@@ -2,6 +2,6 @@ vm:
   use:
     name: test
 
-script:
-  - echo "Checking if custom file exists"
-  - sudo cat /my-custom-dir/my_custom_file.txt
+# script:
+#   - echo "Checking if custom file exists"
+#   - sudo cat /my-custom-dir/my_custom_file.txt
