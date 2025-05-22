@@ -1,9 +1,7 @@
-jobs:
-  include:
-    - stage: "Create custom image1"
-      os: linux
-      language: generic
-      dist: focal
-      vm:
-        create:
-          name: cust-image1
+vm:
+  use:
+    name: cust-image4
+
+script:
+  - echo "Checking if custom file exists"
+  - sudo cat /my-custom-dir/my_custom_file.txt
