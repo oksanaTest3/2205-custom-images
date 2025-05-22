@@ -1,6 +1,6 @@
 # os: linux
 language: generic
-dist: focal
+# dist: focal
 
 vm:
   create:
