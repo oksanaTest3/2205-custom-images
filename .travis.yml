@@ -1,7 +1,13 @@
-vm:
-  use:
-    name: cust-image4
+os: linux
+language: generic
+dist: focal
 
-# script:
-#   - echo "Checking if custom file exists"
-#   - sudo cat /my-custom-dir/my_custom_file.txt
+vm:
+  create:
+    name: cust-image5
+
+script:
+  - echo "Creating custom file"
+  - sudo mkdir /my-custom-dir
+  - echo "Test custom image!" | sudo tee /my-custom-dir/my_custom_file.txt
+  - sudo cat /my-custom-dir/my_custom_file.txt
